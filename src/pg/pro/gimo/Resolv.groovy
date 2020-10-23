@@ -1,4 +1,5 @@
 package pg.pro.gimo
+import pg.pro.gimo.Delta
 
 
 println "Informe-me alguns dados(Preencha os espaços abaixo)! "
@@ -24,27 +25,9 @@ if (ben == 'y') {
 
     def delta = b * b - 4*a*c
     println "Delta é ${delta}"
-    if (delta == 0){
-        Integer zel = 0
-    }else{
-        if(delta = 1){
-            Integer zel = 1
-        }else{
-            if(delta = 4){
-                Integer zel = 2
-            }else{
-                if(delta = 9){
-                    Integer zel = 3
-                }else{
-                    if(delta = 16){
-                        Integer zel = 4
-                    }else{
-                        println "Não posso ajudar!"
-                    }
-                }
-            }
-        }
-    }
+
+    def zel = Delta(delta)
+
     println(zel)
 
 }
